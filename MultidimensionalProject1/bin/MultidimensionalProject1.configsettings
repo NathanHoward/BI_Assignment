@@ -1,0 +1,205 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>COMP3065</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=.\ssrs;Integrated Security=SSPI;Initial Catalog=COMP3065</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">sctcad</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Sales Reason</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Person</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Business Entity</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Store</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Territory</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Country Region</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Reason 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Person Quota History</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Order Header</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Product</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Country Region 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Special Offer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Special Offer Product</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Product 1</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>COMP3065</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Sales Reason</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Reason</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Store</ID>
+            <Partitions>
+              <Partition>
+                <ID>Store</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Person</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Person</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Country Region</ID>
+            <Partitions>
+              <Partition>
+                <ID>Country Region</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COMP3065 1</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Sales Reason</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Reason</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Person Quota History</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Person Quota History</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Order Header Sales Reason</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Order Header Sales Reason</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Territory</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Territory</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COMP3065 2</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Store</ID>
+            <Partitions>
+              <Partition>
+                <ID>Store</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Customer</ID>
+            <Partitions>
+              <Partition>
+                <ID>Customer</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Country Region</ID>
+            <Partitions>
+              <Partition>
+                <ID>Country Region</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Sales Person</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Person</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>COMP3065 3</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Special Offer Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Special Offer Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Product</ID>
+            <Partitions>
+              <Partition>
+                <ID>Product</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

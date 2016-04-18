@@ -1,0 +1,452 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="db8e0f42-5232-4d7f-b358-cee1ea5d0da4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COMP3065</ID>
+  <Name>COMP3065</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="468643f2-3a15-4db4-9b4e-d103d56f1bd0">
+      <ID>Sales Reason</ID>
+      <Name>Sales Reason</Name>
+      <DimensionID>Sales Reason</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="24456556-fce8-4b88-baf0-01732109d0fe">
+          <AttributeID>Sales Reason ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="17cec830-019c-4ab9-b64e-110df682e5be">
+      <ID>Store</ID>
+      <Name>Store</Name>
+      <DimensionID>Store</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="204826cb-26ea-4388-a6ce-6af0a7181f6c">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="652e1fe4-ff88-41f2-9c94-ec64eb9d3b9c">
+          <AttributeID>Sales Person ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8bf7c7e4-f09d-4401-834c-99cdd8d8fb43">
+      <ID>Sales Person</ID>
+      <Name>Sales Person</Name>
+      <DimensionID>Sales Person</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="65de8605-7364-4b89-9edd-c0407f55e2d9">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a2ec48b-4d46-42b3-8009-1ec94edabc3e">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3fd23913-a33f-4597-bc27-2fb59a5e9cb0">
+      <ID>Business Entity</ID>
+      <Name>Business Entity</Name>
+      <DimensionID>Business Entity</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ce08996d-6d03-4f19-80e5-cac8a72fa286">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e2afccdd-9491-4f51-bbae-61f24a09c510">
+      <ID>Sales Territory</ID>
+      <Name>Sales Territory</Name>
+      <DimensionID>Sales Territory</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7ef828de-8806-4f23-a1ca-4b5b6551874c">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f807469-3671-46d8-acd8-e9eead08e9c7">
+          <AttributeID>Country Region Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="565843db-fe7a-4e18-801d-c79a674a266e">
+      <ID>Country Region</ID>
+      <Name>Country Region</Name>
+      <DimensionID>Country Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bade3a33-9dc1-4b97-8c2c-24e1af26ae95">
+          <AttributeID>Country Region Code</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="2212df44-2a81-484a-a20f-c3bab317a226">
+      <ID>Sales Reason</ID>
+      <Name>Sales Reason</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="496a90e1-9282-45a7-b2e3-01b9832c78c0">
+          <ID>Sales Reason Count</ID>
+          <Name>Sales Reason Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="92177a59-8b6e-45f7-9a7d-57e1d599b82a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="417d4a1f-68b0-465a-9d96-d9afe1e4ffab">
+              <TableID>Sales_SalesReason</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="40c1358d-e47b-4740-b139-605c5bcb2975">
+          <CubeDimensionID>Sales Reason</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4fccbc76-df83-4515-a87c-7e3a505309bb">
+              <AttributeID>Sales Reason ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="312832ab-4bd3-4ca7-b84a-036a0411b678">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0645622-22d8-4eb0-a081-141b5f651754">
+                    <TableID>Sales_SalesReason</TableID>
+                    <ColumnID>SalesReasonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="8077da6b-aba8-464a-abd8-ab8b94e21bc7">
+      <ID>Store</ID>
+      <Name>Store</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="610a31a1-44b6-4416-b8b4-d6b851938615">
+          <ID>Store Count</ID>
+          <Name>Store Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="055dd546-073c-4bf7-b9f9-667348e63f14">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e25e2bda-48b6-45ad-ad78-981f9b782af5">
+              <TableID>Sales_Store</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="26b0e718-c354-4b06-b211-fe5564ae161b">
+          <CubeDimensionID>Store</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e1b78365-e44a-4bd9-a2f9-b6d154d10b83">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ab5a92f2-f16a-41d3-a208-4d2843359b7a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6860f6ae-4d16-43df-8f2c-3290263c82b5">
+                    <TableID>Sales_Store</TableID>
+                    <ColumnID>BusinessEntityID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07baaf03-e27e-4df6-ad00-727a89328dd2">
+          <CubeDimensionID>Sales Person</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5bf942df-47d0-43d1-bc42-2becfa670291">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6ffc1d70-a76c-4b1c-bb79-9eb1963bf131">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f1e9562-64fd-495e-bf26-7bcb10121ffa">
+                    <TableID>Sales_Store</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bdd5e27c-f575-44f7-8d9c-e9ea7fd601a7">
+          <CubeDimensionID>Business Entity</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aefc76d4-930b-4e2e-94a8-b8589c521173">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18e98d9e-f648-44a7-bee1-9dd04af7dd45">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b074693-5e47-46ec-8514-d460768198c9">
+                    <TableID>Sales_Store</TableID>
+                    <ColumnID>BusinessEntityID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="2edae589-b858-4a18-8a8c-597bc1fffe62">
+          <CubeDimensionID>Sales Territory</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2b080069-be9e-4413-9fef-3a679986a9be">
+              <AttributeID>Territory ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Sales Person</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Territory ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9c88d8ff-d1e2-456c-802d-8ad5137fd488">
+          <CubeDimensionID>Country Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8cbb53e0-62e5-48ac-9355-bd6971a2ef8f">
+              <AttributeID>Country Region Code</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Sales Territory</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Country Region Code</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="903c0e40-f496-45f9-8006-bee9197903de">
+      <ID>Sales Person</ID>
+      <Name>Sales Person</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="733b84df-a265-4a43-9dfd-14cb2f4d4ad5">
+          <ID>Sales Quota</ID>
+          <Name>Sales Quota</Name>
+          <Source dwd:design-time-name="223d4e6b-3cd6-49f5-ad28-8aaf2df381d4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="aaebf318-7fc0-4c67-bde0-f56f65abebee">
+              <TableID>Sales_SalesPerson</TableID>
+              <ColumnID>SalesQuota</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="727b204e-0a55-46a5-b6bb-01a0e154bcbf">
+          <ID>Bonus</ID>
+          <Name>Bonus</Name>
+          <Source dwd:design-time-name="e765e30d-dfbd-4789-9d53-00f7d89d3228">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a2b01b77-6f0d-43d2-872b-e4753191845a">
+              <TableID>Sales_SalesPerson</TableID>
+              <ColumnID>Bonus</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="387f1e4f-e674-477a-9502-71b0db7d04ab">
+          <ID>Commission Pct</ID>
+          <Name>Commission Pct</Name>
+          <Source dwd:design-time-name="3a7917a1-26bf-45f2-9597-a59cbd8ccb3f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="06e55908-f8a2-4b90-b2a7-c3dc4ad7d9fc">
+              <TableID>Sales_SalesPerson</TableID>
+              <ColumnID>CommissionPct</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1d75c03e-448b-4443-ab06-a4c95c52871d">
+          <ID>Sales YTD</ID>
+          <Name>Sales YTD</Name>
+          <Source dwd:design-time-name="48c47643-f70d-47e8-8195-9d1d7f324be5">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c10e12c4-34ef-4320-b858-6ea2e8969d06">
+              <TableID>Sales_SalesPerson</TableID>
+              <ColumnID>SalesYTD</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="50c8b09d-e3e5-4357-830a-002ebf9500df">
+          <ID>Sales Last Year</ID>
+          <Name>Sales Last Year</Name>
+          <Source dwd:design-time-name="73ca2e60-77f1-4591-be4d-430ad9f7b903">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6977cda4-778f-46aa-a140-17596dc71b11">
+              <TableID>Sales_SalesPerson</TableID>
+              <ColumnID>SalesLastYear</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7e65d776-e95f-4b0c-af3e-743bdc5f4dbb">
+          <ID>Sales Person Count</ID>
+          <Name>Sales Person Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2e8aeea7-f9e8-4f9a-ac15-196c209335f4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a69ed6af-eba6-41fa-93cb-482df7c76afd">
+              <TableID>Sales_SalesPerson</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="10bf62ba-5105-4614-b747-8e5a83126f1b">
+          <CubeDimensionID>Sales Person</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d39cc30d-50bb-48ba-b866-7e87bc4eb948">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ac1916d1-966b-4a64-8fe0-8fd2e695890b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="021dcfc6-fbc6-49d1-9587-0c3782497363">
+                    <TableID>Sales_SalesPerson</TableID>
+                    <ColumnID>BusinessEntityID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b0374fdd-236e-4b66-acae-b1f1daa5afeb">
+          <CubeDimensionID>Sales Territory</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8e28f1d2-e8a7-4a8d-be78-a26b10ccee97">
+              <AttributeID>Territory ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c07960f-a0bd-44c8-a745-24f65c46b9b9">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b0cdc56a-ae14-4dca-afab-92545dff5710">
+                    <TableID>Sales_SalesPerson</TableID>
+                    <ColumnID>TerritoryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f323efab-8b89-4017-915f-5fb3132d88fb">
+          <CubeDimensionID>Country Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="55966567-713d-49d8-ab80-a5e93294a250">
+              <AttributeID>Country Region Code</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Sales Territory</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Country Region Code</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7e1c9b69-aa5a-48f8-b177-adcca5d61c78">
+      <ID>Country Region</ID>
+      <Name>Country Region</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="04129b3f-16aa-4218-8b97-3b0028c7f2b4">
+          <ID>Country Region Count</ID>
+          <Name>Country Region Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="bbf8ef73-3771-497d-9e59-afc91ff8bd6d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="397b5026-2e6d-4ba7-8191-108a08d796e6">
+              <TableID>Person_CountryRegion</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="aff27f3f-e5ff-45fd-b6eb-1e3adb752b31">
+          <CubeDimensionID>Country Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e8a5c6b8-91f0-49fe-8897-f42133fc0e64">
+              <AttributeID>Country Region Code</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="611d3f40-6127-4df3-a678-b6ad760ad3d9">
+                  <DataType>WChar</DataType>
+                  <DataSize>3</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a01a6a8c-ae70-4983-8767-b23134dfa922">
+                    <TableID>Person_CountryRegion</TableID>
+                    <ColumnID>CountryRegionCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="2cabc50d-50bf-482a-8130-c13049be6129">
+    <DataSourceViewID>COMP3065</DataSourceViewID>
+  </Source>
+</Cube>
